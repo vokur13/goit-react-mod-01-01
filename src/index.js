@@ -1,16 +1,18 @@
-// import React, { Fragment } from 'react';
+import React from 'react';
+// import React { Fragment } from 'react';
 import ReactDOM from 'react-dom/client';
+// import './js/component-1';
 // import PropTypes from 'prop-types';
-// import './index.css';
-// import App from './App';
+import './index.css';
+import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
@@ -18,30 +20,17 @@ import ReactDOM from 'react-dom/client';
 // reportWebVitals();
 
 // ================================================
-const favouriteBooks = [
-  { id: 'id-1', name: 'JS for beginners' },
-  { id: 'id-2', name: 'React basics' },
-  { id: 'id-3', name: 'React Router overview' },
-  { id: 'id-4', name: 'Redux in depth' },
-];
+// const elem1 = React.createElement('span', { children: 'Hello' });
+// const elem2 = React.createElement('span', { children: 'World!' });
+// const element = React.createElement('div', {
+//   a: 5,
+//   b: 10,
+//   children: 'Hello World!!!',
+// });
 
-const BookList = ({ books }) => (
-  <ul>
-    {books.map(book => (
-      <li key={book.id}>{book.name}</li>
-    ))}
-  </ul>
-);
+// const jsxElement = <div>Hello World!!!</div>;
 
-const App = () => {
-  return (
-    <div>
-      <BookList books={favouriteBooks} />
-    </div>
-  );
-};
-/*
- * Определение defaultProps гарантирует, что props.imgUrl будет иметь значение,
- * даже если оно не было передано при использовании компонента в родителе.
- */
-ReactDOM.createRoot(document.getElementById('root')).render(App);
+// console.log(jsxElement);
+
+// ReactDOM.render(element, document.querySelector('#root'));
+// ReactDOM.createRoot(document.getElementById('root')).render(jsxElement);
